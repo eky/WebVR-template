@@ -1,0 +1,42 @@
+body {
+	width: 100%;
+	height: 100%;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+details {
+	padding: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	font-family: sans-serif;
+	overflow: auto;
+	background: rgba(255, 255, 255, .6);
+}
+
+summary {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+details code {
+	font-family: monospace;
+}
+
+.vr-control-buttons {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+canvas {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
