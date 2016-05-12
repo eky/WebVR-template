@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Web VR head gesture - nod / shake</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link href="../../css/style.css" media="all" rel="stylesheet" />
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/three/three.js"></script>
+	<script src="../../js/three/VREffect.js"></script>
+	
+	<!-- if needed, basic head motion control -->
+	<!-- <script src="../../js/three/VRControls.js"></script> -->
+
+	<!-- For VR, wasd + head motion control -->
+	<script src="../../js/three/FirstPersonVRControls.js"></script>
+
+	<!-- For non-VR, wasd control -->
+	<script src="../../js/three/FirstPersonControls.js"></script>
+</head>
+
+<body>
+
+	<div class="vr-control-buttons">
+		<button class="enter-vr">Enter VR</button>
+		<button class="exit-vr">Exit VR</button>
+		<button class="reset-vr-center">Reset VR center</button>
+	</div>
+
+	<canvas id="gesture-canvas" width="300" height="300"></canvas>
+	
+	<!-- polyfill for mobile cardboard -->
+	<script src="../../js/webvr-polyfill.js"></script>
+	<!-- WebVR wrapper -->
+	<script src="../../js/WebVR.js"></script>
+	<script src="../../js/WebVR.gesture.js"></script>
+	
+	<!-- THREE scene here -->
+	<script src="app.js"></script>
+	
+	<!-- debug use, requires WebVR.js -->
+	<script src="../../js/vr-debug.js"></script>
+
+</body>
+
+</html>

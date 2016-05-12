@@ -40,3 +40,12 @@ canvas {
 	left: 0;
 	top: 0;
 }
+
+#gesture-canvas {
+	width: 300px;
+	height: 300px;
+	left: auto;
+	right: 0;
+	background: rgba(0, 0, 0, .6);
+	z-index: 2;
+}
